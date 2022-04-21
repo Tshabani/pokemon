@@ -1,0 +1,23 @@
+<div *ngIf="pokemons?.length">
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let pokemon of pokemons" class="col pt-4">
+        <div class="card" style="width: 18rem">
+          <img
+            src="{{ imgUrl(pokemon.url) }}"
+            class="card-img-top"
+            alt="{{ pokemon.name }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ pokemon.name }}</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
+              dui risus.
+            </p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

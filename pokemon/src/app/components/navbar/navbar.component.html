@@ -1,0 +1,16 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">{{ title }}</a>
+    <form class="d-flex">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+        name="searchTerm"
+        [(ngModel)]="term"
+        (keyup)="onSearch($event)"
+      />
+    </form>
+  </div>
+</nav>
